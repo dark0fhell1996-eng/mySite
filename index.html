@@ -106,11 +106,15 @@
             <p><strong>Ansprechpartner:</strong> Mohammad Al Asadi</p>
         </div>
 
-        <form>
-            <input type="text" placeholder="Ihr Name" required>
-            <input type="email" placeholder="Ihre E‑Mail" required>
-            <input type="text" placeholder="Telefon (optional)">
-            <textarea placeholder="Beschreiben Sie kurz Ihr Anliegen..." required></textarea>
+        <form action="https://formspree.io/f/xwvdvqnp" method="POST">
+            <input type="text" name="name" placeholder="Ihr Name" required>
+            <input type="email" name="email" placeholder="Ihre E‑Mail" required>
+            <input type="text" name="phone" placeholder="Telefon (optional)">
+            <textarea name="message" placeholder="Beschreiben Sie kurz Ihr Anliegen..." required></textarea>
+
+            <!-- مهم جداً: هذا الحقل يخبر Formspree أنك تريد استلام الرسائل -->
+            <input type="hidden" name="_replyto" value="info@blitz-it-service.de">
+
             <button type="submit" class="btn-orange">Anfrage senden</button>
         </form>
     </div>
