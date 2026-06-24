@@ -72,7 +72,7 @@ nav a {
    HERO SECTION
    =========================== */
 .hero {
-    background: url("hero.jpg") center/cover no-repeat;
+    background: url("assets/hero.jpg") center/cover no-repeat;
     padding: 150px 20px;
     text-align: center;
     color: white;
