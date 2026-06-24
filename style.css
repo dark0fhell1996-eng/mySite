@@ -1,15 +1,30 @@
+/* ===========================
+   GENERAL STYLES
+   =========================== */
 body {
     margin: 0;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background: #0A1A2F;
-    color: #fff;
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    color: #222;
 }
 
-/* HEADER */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+/* ===========================
+   HEADER
+   =========================== */
 header {
-    background: #0F223A;
-    border-bottom: 1px solid #1E3A5C;
+    background: white;
     padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
 .header-flex {
@@ -18,116 +33,123 @@ header {
     align-items: center;
 }
 
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 .logo {
     height: 55px;
 }
 
 .brand {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
-    margin-left: 10px;
-    color: #fff;
+    color: #003366;
 }
 
 nav a {
     margin-left: 20px;
     text-decoration: none;
-    color: #cfd9e6;
-    font-weight: 600;
+    color: #003366;
+    font-weight: bold;
 }
 
 .btn-orange {
     background: #ff7a00;
     padding: 10px 18px;
-    color: white !important;
     border-radius: 6px;
+    color: white !important;
 }
 
-.big {
+.btn-orange.big {
     padding: 14px 25px;
     font-size: 18px;
 }
 
-/* HERO */
+/* ===========================
+   HERO SECTION
+   =========================== */
 .hero {
-    background: linear-gradient(#0A1A2Fcc, #0A1A2Fcc), url('hero.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 140px 0;
+    background: url("assets/hero.jpg") center/cover no-repeat;
+    padding: 150px 20px;
     text-align: center;
     color: white;
 }
 
-/* SERVICES */
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+/* ===========================
+   SERVICES
+   =========================== */
 .services {
-    padding: 70px 0;
+    padding: 60px 0;
 }
 
 .service-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 25px;
 }
 
 .service-card {
-    background: #11263F;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
-    padding-bottom: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 
 .service-card img {
     width: 100%;
-    height: 180px;
-    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
 }
 
-.service-card h3 {
-    padding: 15px 20px 0;
-    color: #fff;
-}
-
-.service-card ul {
-    padding: 0 35px;
-    color: #cfd9e6;
-}
-
-/* CONTACT */
+/* ===========================
+   CONTACT
+   =========================== */
 .contact {
-    background: #081524;
-    color: white;
-    padding: 70px 0;
-    text-align: center;
+    padding: 60px 0;
+    background: #eef3f8;
 }
 
 .contact form {
-    width: 60%;
-    margin: auto;
     display: flex;
     flex-direction: column;
+    gap: 15px;
+    width: 60%;
 }
 
 .contact input,
 .contact textarea {
-    margin: 10px 0;
     padding: 12px;
     border-radius: 6px;
-    border: none;
+    border: 1px solid #ccc;
+    font-size: 16px;
 }
 
-.contact button {
-    margin-top: 10px;
-    border: none;
-    padding: 14px;
-    border-radius: 6px;
-    font-size: 18px;
+.contact textarea {
+    height: 120px;
 }
 
-/* FOOTER */
+/* ===========================
+   FOOTER
+   =========================== */
 footer {
-    background: #000;
-    color: white;
     text-align: center;
-    padding: 15px;
+    padding: 20px;
+    background: #003366;
+    color: white;
+    margin-top: 40px;
 }
+
+/* =================—
