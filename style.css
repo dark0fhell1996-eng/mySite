@@ -1,4 +1,4 @@
-body {
+Body {
     margin: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
     background: #0A1A2F;
@@ -93,11 +93,11 @@ nav a {
     color: #cfd9e6;
 }
 
-/* CONTACT */
+/* CONTACT - تم تعديل هذا القسم */
 .contact {
     background: #081524;
     color: white;
-    padding: 70px 0;
+    padding: 100px 0; /* تمت زيادة المساحة لتكبير القسم */
     text-align: center;
 }
 
@@ -111,7 +111,7 @@ nav a {
 .contact input,
 .contact textarea {
     margin: 10px 0;
-    padding: 12px;
+    padding: 20px; /* تمت زيادة الطول */
     border-radius: 6px;
     border: none;
 }
