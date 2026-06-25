@@ -1,16 +1,11 @@
-/* ===========================
-   GLOBAL
-   =========================== */
-body {
+Body {
     margin: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
     background: #0A1A2F;
     color: #fff;
 }
 
-/* ===========================
-   HEADER
-   =========================== */
+/* HEADER */
 header {
     background: #0F223A;
     border-bottom: 1px solid #1E3A5C;
@@ -53,9 +48,7 @@ nav a {
     font-size: 18px;
 }
 
-/* ===========================
-   HERO
-   =========================== */
+/* HERO */
 .hero {
     background: linear-gradient(#0A1A2Fcc, #0A1A2Fcc), url('hero.jpg');
     background-size: cover;
@@ -65,9 +58,7 @@ nav a {
     color: white;
 }
 
-/* ===========================
-   SERVICES
-   =========================== */
+/* SERVICES */
 .services {
     padding: 70px 0;
 }
@@ -102,13 +93,11 @@ nav a {
     color: #cfd9e6;
 }
 
-/* ===========================
-   CONTACT (BASE)
-   =========================== */
+/* CONTACT */
 .contact {
     background: #081524;
     color: white;
-    padding: 100px 0; /* تكبير القسم */
+    padding: 100px 0;
     text-align: center;
 }
 
@@ -122,19 +111,9 @@ nav a {
 .contact input,
 .contact textarea {
     margin: 10px 0;
-    padding: 12px; /* رجعنا الحجم الطبيعي للموبايل */
+    padding: 12px; /* هذا للموبايل فقط */
     border-radius: 6px;
     border: none;
-}
-
-/* تكبير النص فوق الفورم */
-.contact h2 {
-    font-size: 32px;
-}
-
-.contact p {
-    font-size: 20px;
-    line-height: 1.6;
 }
 
 .contact button {
@@ -145,31 +124,17 @@ nav a {
     font-size: 18px;
 }
 
-/* ===========================
-   CONTACT (DESKTOP IMPROVED)
-   =========================== */
-@media (min-width: 769px) {
-
-    .contact form {
-        width: 70%;
-        max-width: 700px;
-    }
-
-    .contact input,
-    .contact textarea {
-        padding: 20px; /* تكبير فقط للكمبيوتر */
-        font-size: 18px;
-    }
-
-    .contact button {
-        padding: 16px;
-        font-size: 20px;
-    }
+/* 🔵 هنا بالضبط تحط تكبير النص */
+.contact h2 {
+    font-size: 32px;
 }
 
-/* ===========================
-   FOOTER
-   =========================== */
+.contact p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+/* FOOTER */
 footer {
     background: #000;
     color: white;
@@ -177,12 +142,20 @@ footer {
     padding: 15px;
 }
 
+@media (min-width: 769px) {
+    .contact input,
+    .contact textarea {
+        padding: 20px; /* الكمبيوتر فقط */
+        font-size: 18px;
+    }
+}
+
 /* ===========================
    MOBILE FIXES ONLY
    =========================== */
 @media (max-width: 768px) {
 
-    /* HEADER */
+    /* الهيدر */
     .header-flex {
         flex-direction: column;
         text-align: center;
@@ -209,6 +182,7 @@ footer {
         position: relative;
     }
 
+    /* طبقة خلف النص لتوضيح الكتابة */
     .hero::before {
         content: "";
         position: absolute;
