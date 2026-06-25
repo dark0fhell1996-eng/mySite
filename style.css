@@ -1,3 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden; /* يمنع ظهور شريط التمرير الأفقي */
+    width: 100%;
+}
+
 Body {
     margin: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
