@@ -1,3 +1,6 @@
+/* ===========================
+   GLOBAL
+   =========================== */
 body {
     margin: 0;
     font-family: 'Segoe UI', Arial, sans-serif;
@@ -5,7 +8,9 @@ body {
     color: #fff;
 }
 
-/* HEADER */
+/* ===========================
+   HEADER
+   =========================== */
 header {
     background: #0F223A;
     border-bottom: 1px solid #1E3A5C;
@@ -48,7 +53,9 @@ nav a {
     font-size: 18px;
 }
 
-/* HERO */
+/* ===========================
+   HERO
+   =========================== */
 .hero {
     background: linear-gradient(#0A1A2Fcc, #0A1A2Fcc), url('hero.jpg');
     background-size: cover;
@@ -58,7 +65,9 @@ nav a {
     color: white;
 }
 
-/* SERVICES */
+/* ===========================
+   SERVICES
+   =========================== */
 .services {
     padding: 70px 0;
 }
@@ -94,16 +103,14 @@ nav a {
 }
 
 /* ===========================
-   DESKTOP CONTACT IMPROVEMENT
+   CONTACT (DESKTOP IMPROVED)
    =========================== */
 @media (min-width: 769px) {
 
-    /* تكبير ارتفاع القسم */
     .contact {
-        padding: 100px 0; /* كان 70 */
+        padding: 100px 0;
     }
 
-    /* تكبير النص اللي فوق */
     .contact h2 {
         font-size: 34px;
         margin-bottom: 25px;
@@ -115,26 +122,59 @@ nav a {
         line-height: 1.6;
     }
 
-    /* تكبير مساحة الفورم */
     .contact form {
-        width: 70%; /* كان 60% */
-        max-width: 700px; /* يمنع التمدد الزائد */
+        width: 70%;
+        max-width: 700px;
     }
 
-    /* تكبير حقول الكتابة */
     .contact input,
     .contact textarea {
-        padding: 16px; /* كان 12 */
+        padding: 16px;
         font-size: 18px;
     }
 
-    /* تكبير زر الإرسال */
     .contact button {
         padding: 16px;
         font-size: 20px;
     }
+}
 
-/* FOOTER */
+/* ===========================
+   CONTACT BASE
+   =========================== */
+.contact {
+    background: #081524;
+    color: white;
+    padding: 70px 0;
+    text-align: center;
+}
+
+.contact form {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact input,
+.contact textarea {
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 6px;
+    border: none;
+}
+
+.contact button {
+    margin-top: 10px;
+    border: none;
+    padding: 14px;
+    border-radius: 6px;
+    font-size: 18px;
+}
+
+/* ===========================
+   FOOTER
+   =========================== */
 footer {
     background: #000;
     color: white;
@@ -147,7 +187,7 @@ footer {
    =========================== */
 @media (max-width: 768px) {
 
-    /* الهيدر */
+    /* HEADER */
     .header-flex {
         flex-direction: column;
         text-align: center;
@@ -174,7 +214,6 @@ footer {
         position: relative;
     }
 
-    /* طبقة خلف النص لتوضيح الكتابة */
     .hero::before {
         content: "";
         position: absolute;
