@@ -93,36 +93,46 @@ nav a {
     color: #cfd9e6;
 }
 
-/* CONTACT */
-.contact {
-    background: #081524;
-    color: white;
-    padding: 70px 0;
-    text-align: center;
-}
+/* ===========================
+   DESKTOP CONTACT IMPROVEMENT
+   =========================== */
+@media (min-width: 769px) {
 
-.contact form {
-    width: 60%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-}
+    /* تكبير ارتفاع القسم */
+    .contact {
+        padding: 100px 0; /* كان 70 */
+    }
 
-.contact input,
-.contact textarea {
-    margin: 10px 0;
-    padding: 12px;
-    border-radius: 6px;
-    border: none;
-}
+    /* تكبير النص اللي فوق */
+    .contact h2 {
+        font-size: 34px;
+        margin-bottom: 25px;
+    }
 
-.contact button {
-    margin-top: 10px;
-    border: none;
-    padding: 14px;
-    border-radius: 6px;
-    font-size: 18px;
-}
+    .contact p {
+        font-size: 20px;
+        margin-bottom: 35px;
+        line-height: 1.6;
+    }
+
+    /* تكبير مساحة الفورم */
+    .contact form {
+        width: 70%; /* كان 60% */
+        max-width: 700px; /* يمنع التمدد الزائد */
+    }
+
+    /* تكبير حقول الكتابة */
+    .contact input,
+    .contact textarea {
+        padding: 16px; /* كان 12 */
+        font-size: 18px;
+    }
+
+    /* تكبير زر الإرسال */
+    .contact button {
+        padding: 16px;
+        font-size: 20px;
+    }
 
 /* FOOTER */
 footer {
