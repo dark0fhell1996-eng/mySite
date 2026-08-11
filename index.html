@@ -10,131 +10,470 @@
 
       gtag('config', 'G-5QPEHSVQLW');
     </script>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blitz‑IT & Elektro</title>
-    
-    <link rel="icon" type="image/x-icon" href="favicon.png">
-    
-    <link rel="stylesheet" href="style.css">
-</head>
+    <title>Blitz-IT & Elektro – IT-Support, Netzwerk & Elektro-Service in Gelnhausen</title>
+    <meta name="description" content="Professioneller IT-Support, Netzwerk, Sicherheitstechnik und Elektro-Service in Gelnhausen & Umgebung. Schnell, persönlich, vor Ort. Kontakt: 0176 83102112.">
 
+    <!-- Open Graph -->
+    <meta property="og:title" content="Blitz-IT & Elektro – Moderne Technik für Zuhause & Büro">
+    <meta property="og:description" content="IT-Support, Netzwerk, Sicherheitstechnik und Elektro-Service aus einer Hand. Gelnhausen & Umgebung (50 km).">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.blitz-it-service.de/">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "Blitz-IT & Elektro",
+      "description": "IT-Support, Netzwerk, Sicherheitstechnik und Elektro-Service in Gelnhausen und Umgebung.",
+      "telephone": "+4917683102112",
+      "email": "info@blitz-it-service.de",
+      "areaServed": "Gelnhausen und Umgebung (50 km)",
+      "contactPoint": {
+        "@type": "Person",
+        "name": "Ali Alasadi"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Gelnhausen",
+        "addressCountry": "DE"
+      }
+    }
+    </script>
+</head>
 <body>
 
-<header>
-    <div class="container header-flex">
-        <div class="logo-area">
-            <img src="logo.png" class="logo" alt="Blitz-IT Logo">
-            <span class="brand">Blitz‑IT & Elektro</span>
-        </div>
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="header">
+    <div class="container header-inner">
+        <a href="#top" class="logo-area" aria-label="Blitz-IT & Elektro – Startseite">
+            <img src="logo.png" class="logo-icon" alt="Blitz-IT Logo" width="40" height="40">
+            <span class="brand">Blitz-IT <span class="brand-accent">&amp; Elektro</span></span>
+        </a>
 
-        <nav>
-            <a href="#contact">Kontakt</a>
-            <a href="#contact" class="btn-orange">Anfrage senden</a>
+        <nav class="main-nav" aria-label="Hauptnavigation">
+            <a href="#leistungen">Leistungen</a>
+            <a href="#warum">Warum wir</a>
+            <a href="#faq">FAQ</a>
+            <a href="#kontakt" class="btn-primary">Anfrage senden</a>
         </nav>
+
+        <button class="menu-toggle" aria-label="Menü öffnen" aria-expanded="false" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </div>
 </header>
 
+<!-- ===== MOBILE MENU ===== -->
+<div class="mobile-menu" id="mobileMenu">
+    <nav aria-label="Mobile Navigation">
+        <a href="#leistungen">Leistungen</a>
+        <a href="#warum">Warum wir</a>
+        <a href="#faq">FAQ</a>
+        <a href="#kontakt" class="btn-primary mobile-menu-cta">Anfrage senden</a>
+    </nav>
+</div>
+
+<main id="top">
+
+<!-- ===== HERO ===== -->
 <section class="hero">
-    <div class="container">
-        <h1>Moderne Technik für Zuhause & Büro</h1>
-        <p>Professioneller IT‑Support, Netzwerk, Sicherheitstechnik und Elektro‑Service – alles aus einer Hand.</p>
-        <a href="#contact" class="btn-orange big">Anfrage senden</a>
+    <div class="hero-bg" aria-hidden="true">
+        <div class="hero-photo"></div>
+        <div class="hero-grid"></div>
+        <div class="hero-glow"></div>
+    </div>
+    <div class="container hero-content">
+        <p class="hero-badge">IT-Support &amp; Elektro-Service · Gelnhausen</p>
+        <h1>Moderne Technik für<br><span class="hero-highlight">Zuhause &amp; Büro</span></h1>
+        <p class="hero-subtitle">Professioneller IT-Support, Netzwerk, Sicherheitstechnik und Elektro-Service – alles aus einer Hand. Schnell, persönlich und vor Ort.</p>
+        <div class="hero-actions">
+            <a href="#kontakt" class="btn-primary btn-lg">Anfrage senden</a>
+            <a href="#leistungen" class="btn-secondary btn-lg">Leistungen ansehen</a>
+        </div>
+        <div class="hero-stats">
+            <div class="hero-stat">
+                <span class="stat-number">5</span>
+                <span class="stat-label">Leistungsbereiche</span>
+            </div>
+            <div class="hero-stat">
+                <span class="stat-number">50 km</span>
+                <span class="stat-label">Servicegebiet</span>
+            </div>
+            <div class="hero-stat">
+                <span class="stat-number">1</span>
+                <span class="stat-label">Ansprechpartner</span>
+            </div>
+        </div>
+    </div>
+    <div class="hero-wave" aria-hidden="true">
+        <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,50 C360,100 1080,0 1440,50 L1440,100 L0,100 Z" fill="var(--color-bg)"/></svg>
     </div>
 </section>
 
-<section id="services" class="services">
+<!-- ===== SERVICES ===== -->
+<section id="leistungen" class="services">
     <div class="container">
-        <h2>Unsere Leistungen</h2>
+        <div class="section-header">
+            <p class="section-eyebrow">Unsere Leistungen</p>
+            <h2>Alles aus einer Hand</h2>
+            <p class="section-desc">Vom Netzwerk bis zur Steckdose – wir kümmern uns um Ihre Technik, damit Sie sich auf das Wesentliche konzentrieren können.</p>
+        </div>
 
         <div class="service-grid">
-
-            <div class="service-card">
-                <img src="network.jpg" alt="Netzwerk & WLAN">
-                <h3>Netzwerk & WLAN</h3>
-                <ul>
-                    <li>Router‑Konfiguration</li>
-                    <li>LAN‑Verkabelung</li>
-                    <li>WLAN‑Optimierung</li>
-                    <li>Patchpanel‑Service</li>
+            <article class="service-card" data-service="0">
+                <div class="service-image"><img src="network.jpg" alt="Netzwerk & WLAN" loading="lazy"></div>
+                <div class="service-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                        <path d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01"/>
+                    </svg>
+                </div>
+                <h3>Netzwerk &amp; WLAN</h3>
+                <ul role="list">
+                    <li>Router-Konfiguration</li>
+                    <li>LAN-Verkabelung</li>
+                    <li>WLAN-Optimierung</li>
+                    <li>Patchpanel-Service</li>
                 </ul>
-            </div>
+            </article>
 
-            <div class="service-card">
-                <img src="security.jpg" alt="Sicherheitstechnik">
+            <article class="service-card" data-service="1">
+                <div class="service-image"><img src="security.jpg" alt="Sicherheitstechnik" loading="lazy"></div>
+                <div class="service-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    </svg>
+                </div>
                 <h3>Sicherheitstechnik</h3>
-                <ul>
+                <ul role="list">
                     <li>Überwachungskameras</li>
                     <li>Alarmanlagen</li>
-                    <li>App‑Einrichtung</li>
+                    <li>App-Einrichtung</li>
                 </ul>
-            </div>
+            </article>
 
-            <div class="service-card">
-                <img src="it.jpg" alt="IT Support">
-                <h3>IT‑Support & Hardware</h3>
-                <ul>
+            <article class="service-card" data-service="2">
+                <div class="service-image"><img src="it.jpg" alt="IT-Support & Hardware" loading="lazy"></div>
+                <div class="service-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                        <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/>
+                    </svg>
+                </div>
+                <h3>IT-Support &amp; Hardware</h3>
+                <ul role="list">
                     <li>Reparatur</li>
-                    <li>Windows‑Installation</li>
-                    <li>Hardware‑Upgrade</li>
+                    <li>Windows-Installation</li>
+                    <li>Hardware-Upgrade</li>
                     <li>Fehlerdiagnose</li>
                 </ul>
-            </div>
+            </article>
 
-            <div class="service-card">
-                <img src="printer.jpg" alt="Drucker Service">
-                <h3>Drucker‑Service (Ricoh)</h3>
-                <ul>
+            <article class="service-card" data-service="3">
+                <div class="service-image"><img src="printer.jpg" alt="Drucker-Service Ricoh" loading="lazy"></div>
+                <div class="service-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                        <path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v8H6z"/>
+                    </svg>
+                </div>
+                <h3>Drucker-Service (Ricoh)</h3>
+                <ul role="list">
                     <li>Installation</li>
                     <li>Reinigung</li>
                     <li>Fehlerbehebung</li>
                 </ul>
-            </div>
+            </article>
 
-            <div class="service-card">
-                <img src="electro.jpg" alt="Elektro Kleinservice">
-                <h3>Elektro‑Kleinservice</h3>
-                <ul>
+            <article class="service-card" data-service="4">
+                <div class="service-image"><img src="electro.jpg" alt="Elektro-Kleinservice" loading="lazy"></div>
+                <div class="service-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                    </svg>
+                </div>
+                <h3>Elektro-Kleinservice</h3>
+                <ul role="list">
                     <li>Lampen</li>
                     <li>Steckdosen</li>
                     <li>Haushaltsgeräte</li>
                 </ul>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ===== WHY US ===== -->
+<section id="warum" class="why-us">
+    <div class="container">
+        <div class="section-header">
+            <p class="section-eyebrow">Warum Blitz-IT &amp; Elektro?</p>
+            <h2>Schnell. Persönlich. Vor Ort.</h2>
+            <p class="section-desc">Kein Callcenter, keine Warteschleifen. Sie sprechen direkt mit dem Techniker.</p>
+        </div>
+
+        <div class="why-grid">
+            <div class="why-card">
+                <div class="why-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                        <circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>
+                    </svg>
+                </div>
+                <h3>Schnelle Reaktion</h3>
+                <p>Wir melden uns kurzfristig zurück und sind bei dringenden Problemen schnell vor Ort im Raum Gelnhausen.</p>
             </div>
 
+            <div class="why-card">
+                <div class="why-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+                    </svg>
+                </div>
+                <h3>Persönlicher Kontakt</h3>
+                <p>Sie haben einen festen Ansprechpartner: Ali Alasadi. Kein Weiterleiten, kein Erklären-von-vorn.</p>
+            </div>
+
+            <div class="why-card">
+                <div class="why-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+                    </svg>
+                </div>
+                <h3>Vor Ort im Servicegebiet</h3>
+                <p>Gelnhausen und Umgebung (50 km). Wir kommen zu Ihnen – ins Büro oder nach Hause.</p>
+            </div>
+
+            <div class="why-card">
+                <div class="why-icon">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13l2 2 4-4"/>
+                    </svg>
+                </div>
+                <h3>Alles aus einer Hand</h3>
+                <p>IT, Netzwerk, Sicherheit und Elektro – Sie brauchen nicht mehrere Dienstleister. Ein Anruf genügt.</p>
+            </div>
         </div>
     </div>
 </section>
 
-<section id="contact" class="contact">
+<!-- ===== SERVICE AREA ===== -->
+<section class="service-area">
     <div class="container">
-        <h2>Kontakt</h2>
-        <p>Sprechen wir über Ihr Projekt. Wir melden uns kurzfristig zurück.</p>
-
-        <div class="contact-info">
-            <p><strong>Telefon:</strong> 0176 83102112</p>
-            <p><strong>E‑Mail:</strong> info@blitz-it-service.de</p>
-            <p><strong>Servicegebiet:</strong> Gelnhausen & Umgebung (50 km)</p>
-            <p><strong>Ansprechpartner:</strong> Ali Alasadi</p>
+        <div class="area-content">
+            <p class="section-eyebrow">Einsatzgebiet</p>
+            <h2>Gelnhausen &amp; Umgebung</h2>
+            <p class="area-desc">Unser Servicegebiet ist Gelnhausen und Umgebung im Umkreis von ca. 50 km.</p>
+            <ul class="area-list" role="list">
+                <li>Gelnhausen</li>
+                <li>Hanau</li>
+                <li>Fulda</li>
+                <li>Aschaffenburg</li>
+                <li>Schlüchtern</li>
+                <li>Bad Orb</li>
+            </ul>
+            <a href="#kontakt" class="btn-primary">Termin anfragen</a>
         </div>
-
-        <form action="https://formspree.io/f/xwvdvqnp" method="POST">
-            <input type="text" name="name" placeholder="Ihr Name" required>
-            <input type="email" name="email" placeholder="Ihre E‑Mail" required>
-            <input type="text" name="phone" placeholder="Telefon (optional)">
-            <textarea name="message" placeholder="Beschreiben Sie kurz Ihr Anliegen..." required></textarea>
-
-            <!-- مهم جداً: هذا الحقل يخبر Formspree أنك تريد استلام الرسائل -->
-            <input type="hidden" name="_replyto" value="info@blitz-it-service.de">
-
-            <button type="submit" class="btn-orange">Anfrage senden</button>
-        </form>
+        <div class="area-visual" aria-hidden="true">
+            <div class="area-circle">
+                <div class="area-center-dot"></div>
+                <div class="area-ring area-ring-1"></div>
+                <div class="area-ring area-ring-2"></div>
+                <div class="area-ring area-ring-3"></div>
+                <span class="area-label">50 km</span>
+            </div>
+        </div>
     </div>
 </section>
 
-<footer>
-    Blitz‑IT & Elektro © 2026 – Ali Alasadi – Gelnhausen
+<!-- ===== FAQ ===== -->
+<section id="faq" class="faq">
+    <div class="container">
+        <div class="section-header">
+            <p class="section-eyebrow">Häufige Fragen</p>
+            <h2>Sie haben Fragen? Wir auch – Antworten.</h2>
+        </div>
+
+        <div class="faq-list">
+            <details class="faq-item">
+                <summary>
+                    <span>Bieten Sie auch Fernwartung an?</span>
+                    <span class="faq-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
+                </summary>
+                <div class="faq-answer">
+                    <p>Sprechen Sie uns an – je nach Problem kann eine Lösung per Fernwartung oder vor Ort sinnvoll sein. Wir beraten Sie ehrlich.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>
+                    <span>Arbeiten Sie auch für Privatkunden?</span>
+                    <span class="faq-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
+                </summary>
+                <div class="faq-answer">
+                    <p>Absolut. Wir betreuen sowohl Privatkunden als auch kleine und mittlere Unternehmen – zu Hause und im Büro.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>
+                    <span>Was kostet eine Anfrage?</span>
+                    <span class="faq-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
+                </summary>
+                <div class="faq-answer">
+                    <p>Die Anfrage ist unverbindlich. Wir besprechen Ihr Anliegen, geben eine erste Einschätzung und machen ein faires Angebot – die Kosten hängen vom Aufwand ab.</p>
+                </div>
+            </details>
+
+            <details class="faq-item">
+                <summary>
+                    <span>Wie schnell können Sie kommen?</span>
+                    <span class="faq-icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg></span>
+                </summary>
+                <div class="faq-answer">
+                    <p>Wir melden uns kurzfristig zurück. Termine vereinbaren wir je nach Verfügbarkeit – bei dringenden Fällen so schnell wie möglich.</p>
+                </div>
+            </details>
+        </div>
+    </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section id="kontakt" class="contact">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-info">
+                <p class="section-eyebrow">Kontakt</p>
+                <h2>Sprechen wir über Ihr Projekt</h2>
+                <p class="contact-desc">Wir melden uns kurzfristig zurück. Schreiben Sie uns oder rufen Sie direkt an.</p>
+
+                <div class="contact-details">
+                    <a href="tel:+4917683102112" class="contact-item">
+                        <div class="contact-item-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="contact-label">Telefon</span>
+                            <span class="contact-value">0176 83102112</span>
+                        </div>
+                    </a>
+
+                    <a href="mailto:info@blitz-it-service.de" class="contact-item">
+                        <div class="contact-item-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="contact-label">E-Mail</span>
+                            <span class="contact-value">info@blitz-it-service.de</span>
+                        </div>
+                    </a>
+
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="contact-label">Servicegebiet</span>
+                            <span class="contact-value">Gelnhausen &amp; Umgebung (50 km)</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-item-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <span class="contact-label">Ansprechpartner</span>
+                            <span class="contact-value">Ali Alasadi</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form-wrap">
+                <form action="https://formspree.io/f/xwvdvqnp" method="POST" class="contact-form">
+                    <input type="hidden" name="_replyto" value="info@blitz-it-service.de">
+
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Ihr Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-Mail</label>
+                        <input type="email" name="email" id="email" placeholder="Ihre E-Mail" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Telefon (optional)</label>
+                        <input type="text" name="phone" id="phone" placeholder="Ihre Telefonnummer">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Nachricht</label>
+                        <textarea name="message" id="message" rows="4" placeholder="Beschreiben Sie kurz Ihr Anliegen..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary btn-lg btn-full">Anfrage senden</button>
+                    <p class="form-note">Wir melden uns kurzfristig zurück.</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- ===== MOBILE STICKY CTA ===== -->
+<div class="mobile-bottom-cta" id="mobileCta">
+    <a href="tel:+4917683102112" class="mobile-cta-call" aria-label="Anrufen">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+    </a>
+    <a href="#kontakt" class="btn-primary mobile-cta-btn">Anfrage senden</a>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <div class="footer-brand">
+            <img src="logo.png" alt="Blitz-IT Logo" width="32" height="32" class="logo-icon">
+            <span>Blitz-IT &amp; Elektro</span>
+        </div>
+        <div class="footer-info">
+            <p>Ali Alasadi · Gelnhausen</p>
+            <p><a href="tel:+4917683102112">0176 83102112</a> · <a href="mailto:info@blitz-it-service.de">info@blitz-it-service.de</a></p>
+        </div>
+        <div class="footer-legal">
+            <a href="#">Impressum</a>
+            <a href="#">Datenschutzerklärung</a>
+            <span class="footer-copy">© 2026 Blitz-IT &amp; Elektro</span>
+        </div>
+    </div>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
