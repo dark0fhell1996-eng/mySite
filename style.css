@@ -1224,6 +1224,371 @@ a.contact-item:hover .contact-value {
     transform: translateY(0);
 }
 
+/* ===== LEGAL PAGES (Impressum / Datenschutz) ===== */
+.legal-page {
+    padding: calc(72px + var(--space-16)) 0 var(--space-20);
+}
+
+.legal-container {
+    max-width: 800px;
+}
+
+.legal-page h1 {
+    font-size: var(--text-4xl);
+    margin-bottom: var(--space-4);
+}
+
+.legal-intro {
+    color: var(--text-muted);
+    font-size: var(--text-lg);
+    margin-bottom: var(--space-10);
+}
+
+.legal-toc {
+    background: var(--color-surface);
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-lg);
+    padding: var(--space-6) var(--space-8);
+    margin-bottom: var(--space-12);
+}
+
+.legal-toc ol {
+    padding-left: var(--space-5);
+    columns: 2;
+    column-gap: var(--space-8);
+    font-size: var(--text-sm);
+}
+
+.legal-toc li { margin: var(--space-1) 0; break-inside: avoid; }
+.legal-toc a { color: var(--text-muted); transition: color var(--t-fast); }
+.legal-toc a:hover { color: var(--orange); }
+
+.legal-section {
+    margin-bottom: var(--space-10);
+    scroll-margin-top: 90px;
+}
+
+.legal-section h2 {
+    font-size: var(--text-2xl);
+    margin-bottom: var(--space-4);
+    padding-bottom: var(--space-2);
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.legal-section p,
+.legal-section li {
+    color: var(--text-light);
+    margin-bottom: var(--space-3);
+}
+
+.legal-section ul {
+    padding-left: var(--space-5);
+    margin-bottom: var(--space-4);
+}
+
+.legal-section a:not(.btn-secondary) {
+    color: var(--orange);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.legal-section a:not(.btn-secondary):hover { color: var(--orange-light); }
+
+.legal-section code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    font-size: 0.9em;
+    background: var(--color-surface-2);
+    padding: 2px 6px;
+    border-radius: var(--radius-sm);
+}
+
+.legal-address {
+    font-style: normal;
+    line-height: 1.8;
+    background: var(--color-surface);
+    border-left: 3px solid var(--orange);
+    border-radius: var(--radius-md);
+    padding: var(--space-4) var(--space-6);
+    margin-bottom: var(--space-4);
+}
+
+.legal-todo {
+    background: rgba(255, 122, 0, 0.18);
+    color: var(--orange-light);
+    padding: 1px 6px;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+}
+
+.legal-back { margin-top: var(--space-12); }
+
+/* ===== CONTACT FORM CONSENT ===== */
+.form-consent {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-3);
+}
+
+.form-consent input[type="checkbox"] {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    margin-top: 3px;
+    accent-color: var(--orange);
+    cursor: pointer;
+}
+
+.form-consent label {
+    font-size: var(--text-sm);
+    color: var(--text-muted);
+    line-height: 1.5;
+    cursor: pointer;
+}
+
+.form-consent label a {
+    color: var(--orange);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+/* ===== COOKIE CONSENT ===== */
+.btn-ghost {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    font-size: var(--text-sm);
+    font-weight: 600;
+    color: var(--text-muted);
+    border-radius: var(--radius-md);
+    transition: color var(--t-fast), background var(--t-fast);
+    white-space: nowrap;
+}
+
+.btn-ghost:hover {
+    color: var(--text-white);
+    background: var(--border-subtle);
+}
+
+.cookie-banner {
+    position: fixed;
+    left: var(--space-4);
+    right: var(--space-4);
+    bottom: var(--space-4);
+    z-index: 1000;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity var(--t-slow), transform var(--t-slow);
+}
+
+.cookie-banner.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.cookie-banner-inner {
+    max-width: var(--container);
+    margin: 0 auto;
+    background: var(--color-surface);
+    border: 1px solid var(--border-medium);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    padding: var(--space-6);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-6);
+    flex-wrap: wrap;
+}
+
+.cookie-banner-text { flex: 1 1 380px; }
+
+.cookie-banner-title {
+    font-weight: 700;
+    color: var(--text-white);
+    margin-bottom: var(--space-1);
+}
+
+.cookie-banner-text p {
+    font-size: var(--text-sm);
+    color: var(--text-muted);
+}
+
+.cookie-banner-text a {
+    color: var(--orange);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}
+
+.cookie-banner-actions {
+    display: flex;
+    gap: var(--space-2);
+    flex-wrap: wrap;
+}
+
+.cookie-banner-actions .btn-secondary {
+    flex: 0 0 auto;
+    padding: 12px 20px;
+    font-size: var(--text-sm);
+    font-weight: 600;
+    border: 1px solid var(--border-medium);
+    border-radius: var(--radius-md);
+    color: var(--text-light);
+    transition: border-color var(--t-fast), background var(--t-fast);
+}
+
+.cookie-banner-actions .btn-secondary:hover {
+    border-color: var(--orange);
+    background: var(--border-subtle);
+}
+
+.cookie-settings {
+    position: fixed;
+    inset: 0;
+    z-index: 1100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-4);
+}
+
+.cookie-settings-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 22, 38, 0.8);
+    backdrop-filter: blur(4px);
+}
+
+.cookie-settings-panel {
+    position: relative;
+    width: 100%;
+    max-width: 560px;
+    max-height: calc(100dvh - var(--space-8));
+    overflow-y: auto;
+    background: var(--color-surface);
+    border: 1px solid var(--border-medium);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+    padding: var(--space-8);
+}
+
+.cookie-settings-close {
+    position: absolute;
+    top: var(--space-4);
+    right: var(--space-4);
+    width: 36px;
+    height: 36px;
+    border-radius: var(--radius-full);
+    font-size: 1.5rem;
+    line-height: 1;
+    color: var(--text-muted);
+    transition: background var(--t-fast), color var(--t-fast);
+}
+
+.cookie-settings-close:hover {
+    background: var(--border-subtle);
+    color: var(--text-white);
+}
+
+.cookie-settings-panel h2 {
+    font-size: var(--text-2xl);
+    margin-bottom: var(--space-2);
+    padding-right: var(--space-10);
+}
+
+.cookie-settings-desc {
+    font-size: var(--text-sm);
+    color: var(--text-muted);
+    margin-bottom: var(--space-6);
+}
+
+.cookie-category {
+    border: 1px solid var(--border-subtle);
+    border-radius: var(--radius-md);
+    padding: var(--space-4) var(--space-5);
+    margin-bottom: var(--space-3);
+    background: var(--color-surface-2);
+}
+
+.cookie-category-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+    margin-bottom: var(--space-2);
+}
+
+.cookie-category-head label {
+    color: var(--text-white);
+    cursor: pointer;
+}
+
+.cookie-category-head input[type="checkbox"] {
+    appearance: none;
+    width: 44px;
+    height: 24px;
+    border-radius: var(--radius-full);
+    background: var(--navy-400);
+    position: relative;
+    cursor: pointer;
+    transition: background var(--t-base);
+    flex-shrink: 0;
+}
+
+.cookie-category-head input[type="checkbox"]::after {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--text-white);
+    transition: transform var(--t-base);
+}
+
+.cookie-category-head input[type="checkbox"]:checked { background: var(--orange); }
+.cookie-category-head input[type="checkbox"]:checked::after { transform: translateX(20px); }
+.cookie-category-head input[type="checkbox"]:disabled { opacity: 0.6; cursor: not-allowed; }
+
+.cookie-category p {
+    font-size: var(--text-sm);
+    color: var(--text-muted);
+}
+
+.cookie-settings-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--space-3);
+    margin-top: var(--space-6);
+    flex-wrap: wrap;
+}
+
+.cookie-settings-actions .btn-secondary {
+    flex: 0 0 auto;
+    padding: 12px 20px;
+    font-size: var(--text-sm);
+    font-weight: 600;
+    border: 1px solid var(--border-medium);
+    border-radius: var(--radius-md);
+    color: var(--text-light);
+}
+
+.cookie-settings-actions .btn-secondary:hover { border-color: var(--orange); }
+
+body.cookie-settings-open { overflow: hidden; }
+
+.cookie-banner[hidden],
+.cookie-settings[hidden] { display: none !important; }
+
+@media (max-width: 768px) {
+    .cookie-banner { left: var(--space-2); right: var(--space-2); bottom: 84px; }
+    .cookie-banner-actions { width: 100%; }
+    .cookie-banner-actions > * { flex: 1 1 auto; }
+    .legal-toc ol { columns: 1; }
+    .legal-page { padding-top: calc(72px + var(--space-10)); }
+}
+
 /* ===== RESPONSIVE ===== */
 @media (max-width: 900px) {
     .contact-grid {
