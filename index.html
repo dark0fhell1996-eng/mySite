@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5QPEHSVQLW"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-5QPEHSVQLW');
-    </script>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blitz-IT & Elektro – IT-Support, Netzwerk & Elektro-Service in Gelnhausen</title>
@@ -32,6 +22,9 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Cookie-Consent: Google Analytics wird erst nach Einwilligung geladen -->
+    <script src="cookie-consent.js"></script>
 
     <!-- Structured Data -->
     <script type="application/ld+json">
@@ -435,6 +428,11 @@
                         <textarea name="message" id="message" rows="4" placeholder="Beschreiben Sie kurz Ihr Anliegen..." required></textarea>
                     </div>
 
+                    <div class="form-group form-consent">
+                        <input type="checkbox" name="privacy" id="privacy" required>
+                        <label for="privacy">Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zur Bearbeitung meiner Anfrage zu.</label>
+                    </div>
+
                     <button type="submit" class="btn-primary btn-lg btn-full">Anfrage senden</button>
                     <p class="form-note">Wir melden uns kurzfristig zurück.</p>
                 </form>
@@ -467,8 +465,9 @@
             <p><a href="tel:+4917683102112">0176 83102112</a> · <a href="mailto:info@blitz-it-service.de">info@blitz-it-service.de</a></p>
         </div>
         <div class="footer-legal">
-            <a href="#">Impressum</a>
-            <a href="#">Datenschutzerklärung</a>
+            <a href="impressum.html">Impressum</a>
+            <a href="datenschutz.html">Datenschutzerklärung</a>
+            <a href="#" data-cookie-settings>Cookie-Einstellungen</a>
             <span class="footer-copy">© 2026 Blitz-IT &amp; Elektro</span>
         </div>
     </div>
